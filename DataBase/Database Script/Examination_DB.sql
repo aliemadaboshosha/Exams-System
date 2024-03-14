@@ -75,7 +75,7 @@ ON Update Cascade
 create table Question
 (
 ID int Primary Key identity(1,1),
-Question_Body Nvarchar(120) unique  not null ,
+Question_Body Nvarchar(200) unique  not null ,
 Question_Type bit not null ,
 Question_Answer tinyint not null,
 Topic_ID int not null ,-- partial key of Topic, pk in topic 
