@@ -1,3 +1,6 @@
+create database Examination_System_DataBase
+
+---------------------------------------------
 use Examination_System_DataBase
 
 create table Branch
