@@ -77,7 +77,7 @@ create table Question
 ID int Primary Key identity(1,1),
 Question_Body Nvarchar(120) unique  not null ,
 Question_Type bit not null ,
-Question_Answer nvarchar(150) not null,
+Question_Answer tinyint not null,
 Topic_ID int not null ,-- partial key of Topic, pk in topic 
 course_ID int not null,-- pk in Topic , weak entity on Course
 foreign key (Topic_ID ,course_ID) references topic(ID,course_ID)
@@ -102,7 +102,10 @@ create table Exam
 (
 ID int primary key identity(1,1),
 Date dateTime not null ,
-Duration Decimal not null 
+Duration Decimal not null ,
+Course_ID int not null,
+foreign Key (Course_ID) references course (ID)  
+
 );
 
 -----------------------
@@ -114,6 +117,8 @@ Supervisor_ID int not null,
 primary key (Branch_ID,Track_ID),
 foreign Key (Branch_ID) references Branch (ID) ON Delete Cascade ON Update Cascade,
 foreign Key (Track_ID) references Track (ID)  ON Delete Cascade ON Update Cascade,
+foreign Key (Supervisor_ID) references Instructor (ID)  ,
+
 );
 
 --------
@@ -151,18 +156,8 @@ foreign key (Instructor_ID) references Instructor(ID)  ON Delete Cascade ON Upda
 Foreign Key (Track_ID) references Track(ID) ON Delete Cascade ON Update Cascade,
 );
 
-create table Student_Exam_Answers
-(
-Student_ID int not null,
-Exam_ID int not null,
-Question_ID int not null,
-Student_Answer tinyint not null
-foreign key (Student_ID) references Student(ID) on delete cascade on update cascade,
-foreign key(Exam_ID) references Exam(ID) on delete cascade on update cascade,
-foreign key(Question_ID ) references Question (ID)  on delete cascade on update cascade
-);
 
-drop table Student_Exam_Answers;
+
 
 create table Student_Exam_Answers
 (
