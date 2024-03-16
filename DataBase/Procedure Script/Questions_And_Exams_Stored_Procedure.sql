@@ -12,3 +12,16 @@ BEGIN
     INSERT INTO Question (Question_Body, Question_Type, Question_Answer, Topic_ID, Course_ID)
     VALUES (@Question_Body, @Question_Type, @Question_Answer, @Topic_ID, @Course_ID);
 END;
+
+
+
+-- Create Procedure for Inserting an Exam
+CREATE PROCEDURE InsertExam
+    @Date DATETIME,
+    @Duration DECIMAL,
+    @Course_ID INT
+AS
+BEGIN
+    INSERT INTO Exam (Date, Duration, Course_ID)
+    VALUES (@Date, @Duration, @Course_ID);
+END
