@@ -104,5 +104,31 @@ BEGIN
 END;
 
 
+-- Create Procedure for Retrieving a Question by ID
+CREATE PROCEDURE GetQuestionByID
+    @Question_ID INT
+AS
+BEGIN
+    SELECT *
+    FROM Question
+    WHERE ID = @Question_ID;
+END;
+
+
+-- Create Procedure for Retrieving an Exam by ID
+CREATE PROCEDURE GetExamByID
+    @Exam_ID INT
+AS
+BEGIN
+    SELECT *
+    FROM Exam
+    WHERE ID = @Exam_ID;
+END;
+
+
+
+
+
+
 
 
