@@ -73,6 +73,8 @@ BEGIN
     WHERE ID = @Question_ID;
 END;
 
+
+
 -- Create Procedure for Deleting an Exam
 CREATE PROCEDURE DeleteExam
     @Exam_ID INT
@@ -81,6 +83,26 @@ BEGIN
     DELETE FROM Exam
     WHERE ID = @Exam_ID;
 END;
+
+
+
+
+-- Create Procedure for Retrieving Questions
+CREATE PROCEDURE GetQuestions
+AS
+BEGIN
+    SELECT * FROM Question;
+END;
+
+
+
+-- Create Procedure for Retrieving Exams
+CREATE PROCEDURE GetExams
+AS
+BEGIN
+    SELECT * FROM Exam;
+END;
+
 
 
 
