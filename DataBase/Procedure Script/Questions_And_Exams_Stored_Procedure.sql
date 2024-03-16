@@ -62,3 +62,25 @@ BEGIN
         Course_ID = @Course_ID
     WHERE ID = @Exam_ID;
 END;
+
+
+-- Create Procedure for Deleting a Question
+CREATE PROCEDURE DeleteQuestion
+    @Question_ID INT
+AS
+BEGIN
+    DELETE FROM Question
+    WHERE ID = @Question_ID;
+END;
+
+-- Create Procedure for Deleting an Exam
+CREATE PROCEDURE DeleteExam
+    @Exam_ID INT
+AS
+BEGIN
+    DELETE FROM Exam
+    WHERE ID = @Exam_ID;
+END;
+
+
+
