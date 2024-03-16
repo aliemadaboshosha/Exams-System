@@ -39,7 +39,7 @@ Name nvarchar(20)  unique not null
 create table course
 (
 ID int Primary Key identity(1,1),
-Name nvarchar(20)  unique not null
+Name nvarchar(150)  unique not null
 )
 
 -------------------------
@@ -65,7 +65,7 @@ foreign key (Track_ID) REFERENCES Track(ID) ON Delete Cascade ON Update Cascade,
 create table topic 
 (
 ID int not null,
-Name nvarchar(20)  unique not null,
+Name nvarchar(250)  unique not null,
 course_ID int not null,
 PRIMARY KEY (ID, course_ID),
 FOREIGN KEY (course_ID) REFERENCES course(ID) 
@@ -173,3 +173,5 @@ foreign key (Student_ID) references Student(ID) on delete cascade on update casc
 foreign key(Exam_ID) references Exam(ID) on delete cascade on update cascade,
 foreign key(Question_ID ) references Question (ID)  on delete cascade on update cascade
 );
+
+
