@@ -8,8 +8,8 @@ create table Branch
 ID int primary key identity(1,1),
 Name nvarchar(30) not null ,
 Building_Number int ,
-Street nvarchar(20),
-City nvarchar(20)  
+Street nvarchar(100),
+City nvarchar(100)  
 )
 
 create table Instructor 
@@ -93,7 +93,7 @@ create table Multi_Choices_Question_Answers--weak entity on Question
 (
 Question_ID int not null,
 Number_OF_Choice int not null,----------partial key
-Body_OF_Choice int not null
+Body_OF_Choice nvarchar(200) not null
 primary key(Question_ID,Number_OF_Choice ),
 foreign key(Question_ID) references Question(ID)
 on Delete cascade 
