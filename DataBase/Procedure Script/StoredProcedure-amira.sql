@@ -1,7 +1,7 @@
 use Examination_System_DataBase
 
 --------------------get Branch By ID-----------------------
-Alter PROCEDURE getBranchByID
+Create PROCEDURE getBranchByID
     @id INT
 AS
 BEGIN
@@ -9,6 +9,14 @@ BEGIN
     FROM Branch
     WHERE ID = @id;
 END;
+
+Create PROCEDURE getBranches
+AS
+BEGIN
+    SELECT *
+    FROM Branch
+END;
+
 
 CREATE PROCEDURE insertBranch
     @name NVARCHAR(30),
@@ -31,7 +39,7 @@ update branch set Name = @name
 where ID = @id
 end;
 
-CREATE PROCEDURE updateBranchByID
+CREATE PROCEDURE update_BranchByID
     @id INT,
     @name VARCHAR(30),
     @Building_Number int,
@@ -47,25 +55,19 @@ BEGIN
     WHERE ID = @id;
 END;
 
---------------- execute updateBranchByID  2,'Program',4,'here','Alex'------------
+--------------- execute update_BranchByID  2,'Program',4,'here','Alex'------------
 
 
-CREATE PROCEDURE DeleteBranchByID
+Alter PROCEDURE DeleteBranchByID
     @id INT
 AS
 BEGIN
     DELETE FROM Branch
-    WHERE ID = @id;
+    WHERE ID = @id
 END;
 
 -------- execute DeleteBranchByID 3 -----------
 
-
-CREATE PROCEDURE DeleteBranch  
-AS
-BEGIN
-    DELETE FROM Branch
-END;
 
 ------ Track -----------
 
@@ -75,7 +77,7 @@ AS
 BEGIN
     SELECT *
     FROM Track
-    WHERE ID = @id;
+    WHERE ID = @id
 END;
 
 ----- SelectTrackByID 1 ------
