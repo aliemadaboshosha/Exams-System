@@ -43,8 +43,10 @@ public partial class ExamContext : DbContext
     public virtual DbSet<TrackBranch> TrackBranches { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=.;Database=Examination_System_DataBase;Integrated Security=true;TrustServerCertificate=true;");
+    {
+        optionsBuilder.UseLazyLoadingProxies() // Enable lazy loading proxies
+                      .UseSqlServer("Server=.;Database=Examination_System_DataBase;Integrated Security=true;TrustServerCertificate=true;");
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -200,11 +202,11 @@ public partial class ExamContext : DbContext
 
         modelBuilder.Entity<Student>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Student__3214EC2788E2EAFF");
+            entity.HasKey(e => e.ID).HasName("PK__Student__3214EC2788E2EAFF");
 
             entity.ToTable("Student");
 
-            entity.Property(e => e.Id).HasColumnName("ID");
+           // entity.Property(e => e.ID).HasColumnName("ID");
             entity.Property(e => e.BranchId).HasColumnName("Branch_ID");
             entity.Property(e => e.City).HasMaxLength(50);
             entity.Property(e => e.DateOfBirth).HasColumnName("Date_of_birth");

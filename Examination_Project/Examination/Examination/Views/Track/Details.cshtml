@@ -1,0 +1,38 @@
+﻿@model Track
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<h1>Details of Track # :@Model.Id</h1>
+
+    <table class="table table-bordered mt-4" style="text-align:
+center">
+    <thead class="alert alert-info">
+            <tr>
+                <th>Track ID</th>
+                <th>Track Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.Name</td>
+            </tr>
+        </tbody>
+
+   </table>
+   <a href="/Track/Index" class="btn btn-outline-primary">Back</a>
+
+@*<form>
+    <label asp-for="Id"></label>
+    <input asp-for="Id" class="form-control" readonly />
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" readonly />
+
+    <a class="btn btn-info mt-4" href="/Track/Index">Back</a>
+
+</form>*@
+

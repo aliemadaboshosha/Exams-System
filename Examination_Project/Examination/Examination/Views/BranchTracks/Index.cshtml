@@ -1,0 +1,33 @@
+﻿@model List<TrackBranch>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h1>Tracks</h1>
+<a href="/Track/Create" class="btn btn-info mt-2 mb-2" style="text-align:left">Create Track</a>
+
+
+<div style="text-align:center">
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>BranchID</th>
+                <th>TrackID</th>
+                <th>Supervisor</th>
+            </tr>
+        </thead>
+            <tbody>
+                    @foreach (var trackBranch in Model)
+                    {
+                        <tr>
+                            <td>@trackBranch.Branch.Name</td>
+                            <td>@trackBranch.Track.Name</td>
+                            <td>@trackBranch.Supervisor.Fname</td>
+                        </tr>
+                    }
+            </tbody>
+    </table>
+</div>
+

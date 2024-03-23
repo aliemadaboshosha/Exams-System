@@ -1,0 +1,43 @@
+﻿@model Branch
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h1>Details of Branch # :@Model.Id</h1>
+
+<table class="table table-bordered mt-4" style="text-align:center">
+    <thead class="alert alert-info">
+        <tr>
+            <th>Branch ID</th>
+            <th>Branch Name</th>
+            <th>Branch BuildingNumber</th>
+            <td>Branch Street</td>
+            <th>Branch City></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.BuildingNumber</td>
+            <td>@Model.Street</td>
+            <td>@Model.City</td>
+        </tr>
+    </tbody>
+
+</table>
+<a href="/Branch/Index" class="btn btn-outline-primary">Back</a>
+@*<form >
+    <label asp-for="Id"></label>
+    <input asp-for="Id" class="form-control" readonly/>
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control"readonly />
+
+    <label asp-for="City"></label>
+    <input asp-for="City" class="form-control" readonly />
+    <a class="btn btn-info mt-4" href="/Branch/Index">Back</a>
+
+</form>*@
+

@@ -1,0 +1,41 @@
+﻿@model Branch
+@{
+    ViewData["Title"] = "Update";
+}
+
+
+
+<form method="post">
+    <div>
+        <label asp-for="Id">Id</label>
+        <input asp-for="Id" class="form-control" readonly/>
+        <span asp-validation-for="Id"></span>
+    </div>
+
+    <div>
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <div>
+        <label asp-for="BuildingNumber">BuildingNumber</label>
+        <input asp-for="BuildingNumber" class="form-control" />
+        <span asp-validation-for="BuildingNumber"></span>
+    </div>
+
+    <div>
+        <label asp-for="Street">Street</label>
+        <input asp-for="Street" class="form-control" />
+        <span asp-validation-for="Street"></span>
+    </div>
+    <div>
+        <label asp-for="City"> City</label>
+        <input asp-for="City" class="form-control" />
+        <span asp-validation-for="City"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4 w-25">Edit</button>
+</form>
+<a class="btn btn-info mt-2" href="/Branch/Index">Back</a>
+
