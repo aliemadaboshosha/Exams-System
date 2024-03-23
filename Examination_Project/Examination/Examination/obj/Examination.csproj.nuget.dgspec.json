@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\iti\\sql project\\Exam-after\\Exams-System\\Examination_Project\\Examination\\Examination\\Examination.csproj": {}
+    "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Examination.csproj": {}
   },
   "projects": {
-    "D:\\iti\\sql project\\Exam-after\\Exams-System\\Examination_Project\\Examination\\Examination\\Examination.csproj": {
+    "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Examination.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\iti\\sql project\\Exam-after\\Exams-System\\Examination_Project\\Examination\\Examination\\Examination.csproj",
+        "projectUniqueName": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Examination.csproj",
         "projectName": "Examination",
-        "projectPath": "D:\\iti\\sql project\\Exam-after\\Exams-System\\Examination_Project\\Examination\\Examination\\Examination.csproj",
-        "packagesPath": "C:\\Users\\T.B\\.nuget\\packages\\",
-        "outputPath": "D:\\iti\\sql project\\Exam-after\\Exams-System\\Examination_Project\\Examination\\Examination\\obj\\",
+        "projectPath": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Examination.csproj",
+        "packagesPath": "C:\\Users\\Elhamd Computer\\.nuget\\packages\\",
+        "outputPath": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\T.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Elhamd Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +37,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -75,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
