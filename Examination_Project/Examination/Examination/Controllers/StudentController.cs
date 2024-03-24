@@ -23,13 +23,13 @@ namespace Examination.Controllers
             return View(students);
         }
 
-        public IActionResult Details(int ? id)
+        public async Task <IActionResult> Details(int ? id)
         {
             if (id == null)
             {
                 return BadRequest();
             }
-            var student = studentRepo.GetById(id.Value);
+            var student =  studentRepo.GetById(id.Value);
             if (student == null)
             {
                 return NotFound();
@@ -44,13 +44,10 @@ namespace Examination.Controllers
             List<Branch> branches = new List<Branch>();
             branches = await branchRepo.GetAll() ?? new List<Branch>();
             List<Track> tracks = await trackRepo.GetAll() ?? new List<Track>();
-  
-
             ViewBag.Branches = branches;
             Console.WriteLine(ViewBag.Branches.Count);
             ViewBag.Tracks = tracks;
-                  Console.WriteLine(ViewBag.Tracks.Count);
-
+            Console.WriteLine(ViewBag.Tracks.Count);
             return View();
         }
 
@@ -62,24 +59,65 @@ namespace Examination.Controllers
                 await studentRepo.Add(student); // Assuming AddAsync is asynchronous
 
                 return RedirectToAction("Index");
-
             }
-
             ModelState.AddModelError("", "Invalid data");
             List<Branch> branches = new List<Branch>();
             branches = await branchRepo.GetAll() ?? new List<Branch>();
             List<Track> tracks = await trackRepo.GetAll() ?? new List<Track>();
-
-
             ViewBag.Branches = branches;
-            Console.WriteLine(ViewBag.Branches.Count);
             ViewBag.Tracks = tracks;
-            Console.WriteLine(ViewBag.Tracks.Count);
-
             return View(student);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Update(int ? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+            var student = studentRepo.GetById(id.Value);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            List<Branch> branches = new List<Branch>();
+            branches = await branchRepo.GetAll() ?? [];
+            ViewBag.Branches = branches;
+            List<Track> tracks = await trackRepo.GetAll() ?? [];
+            ViewBag.Tracks = tracks;
+            return View(student);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(Student student)
+        {
+            if (!ModelState.IsValid)
+            {
+                List<Branch> branches = new List<Branch>();
+                branches = await branchRepo.GetAll() ?? [];
+                List<Track> tracks = await trackRepo.GetAll() ?? [];
+                ViewBag.Branches = branches;
+                ViewBag.Tracks = tracks;
+                return View(student);
+            }
+            await studentRepo.Update(student);
+            return RedirectToAction("Index");
+        }
 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+            var student = studentRepo.GetById(id.Value);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            await studentRepo.Delete(id.Value);
+            return RedirectToAction("Index");
+        }
 
     }
 }

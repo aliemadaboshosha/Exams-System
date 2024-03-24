@@ -14,14 +14,14 @@ namespace Examination.Repos
     {
         List<Student> GetAll();
         Task Add(Student student);
-        public Student GetById(int id);
-        void Delete(int id);
-        void Update(Student student);
+         Student GetById(int id);
+        Task Delete(int id);
+        Task Update(Student student);
 
     }
-    public class StudentRepo: IstudentRepo
+    public class StudentRepo : IstudentRepo
     {
-         public readonly ExamContext db;
+        public readonly ExamContext db;
 
         public StudentRepo(ExamContext db)
         {
@@ -30,11 +30,13 @@ namespace Examination.Repos
 
         public List<Student> GetAll()
         {
-            //to include the Department every time we read Student from the database
-            //return db.Students.Include(s => s.Department).ToList();
-            var students = db.Students.FromSql($"exec sp_GetStudents").ToList();
+            var students = db.Students
+                            .FromSqlRaw("exec sp_GetStudents")
+                            .AsEnumerable().ToList();// Convert to enumerable
+                         // Materialize the query
             return students;
         }
+
         #region Old version of add student
         //public async Task Add(Student student)
         //{
@@ -97,7 +99,8 @@ namespace Examination.Repos
             return student;
         }
 
-        public void Update(Student student)
+       
+        public async Task Update(Student student)
         {
             var parameters = new SqlParameter[]
             {
@@ -114,20 +117,26 @@ namespace Examination.Repos
                 new SqlParameter("@TrackID", student.TrackId)
             };
 
-            db.Students.FromSqlRaw("EXEC sp_UpdateStudent @Id, @FirstName, @LastName, @Gender, @Email, @Password, @Street, @City, @DateOfBirth, @BranchID, @TrackID", parameters)
-                .FirstOrDefault();
-            db.SaveChanges();
+            await db.Database.ExecuteSqlRawAsync("EXEC sp_UpdateStudent @Id, @FirstName, @LastName, @Gender, @Email, @Password, @Street, @City, @DateOfBirth, @BranchID, @TrackID", parameters);
+
+            await db.SaveChangesAsync();
+
         }
         //FromSql : does not have more than 2 parameters ,
         // so uing FromSqlRaw
 
-        public void Delete(int id)
+
+        public async Task Delete(int id)
         {
-            db.Students.FromSql($"exec sp_DeleteStudent {id}").FirstOrDefault();
-            db.SaveChanges();
+            await db.Database.ExecuteSqlRawAsync($"exec sp_DeleteStudent {id}");
+            await db.SaveChangesAsync();
+
+            //db.Tracks.Remove(GetById(id));// without stored procedure
         }
-    }
 
-
+    } 
 }
+
+
+
 

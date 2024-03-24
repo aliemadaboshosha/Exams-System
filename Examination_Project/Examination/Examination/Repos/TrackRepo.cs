@@ -29,9 +29,7 @@ namespace Examination.Repos
         {
            
                 var track = await db.Tracks.FromSqlRaw($"SELECT * FROM Track WHERE Id = {id}").FirstOrDefaultAsync();
-            return track;
-
-
+                return track;
             //return await db.Tracks.FromSqlRaw($"exec SelectTrackByID {id}").FirstOrDefaultAsync();
             //db.Tracks.FirstOrDefault(a=>a.Id == id);// without stored procedure
         }

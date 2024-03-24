@@ -60,7 +60,6 @@ namespace Examination.Repos
             );
             await db.SaveChangesAsync();
         }
-
         public async Task Delete(int id)
         {
             await db.Database.ExecuteSqlRawAsync($"exec DeleteBranchByID {id}");

@@ -20,6 +20,7 @@ namespace Examination
             builder.Services.AddScoped<IBranchRepo, BranchRepo>();
             builder.Services.AddScoped<ITrackRepo,TrackRepo>();
             builder.Services.AddScoped<IstudentRepo, StudentRepo>();
+            builder.Services.AddScoped<IInstructorRepo , InstructorRepo>();
 
             builder.Services.AddDbContext<ExamContext>(a =>
           a.UseSqlServer(builder.Configuration.GetConnectionString("Conn1")));
@@ -39,7 +40,7 @@ namespace Examination
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Student}/{action=Index}/{id?}");
+                pattern: "{controller=Instructor}/{action=Index}/{id?}");
 
             app.Run();
         }

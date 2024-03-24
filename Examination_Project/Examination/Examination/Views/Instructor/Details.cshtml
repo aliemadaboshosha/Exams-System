@@ -1,0 +1,31 @@
+﻿@model Instructor
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<h1>Details of Instructor # :@Model.Id</h1>
+
+<table class="table table-bordered mt-4" style="text-align:center">
+    <thead class="alert alert-info">
+        <tr>
+            <th>Instructor ID</th>
+            <th>Instructor FName</th>
+            <th>Instructor Lname</th>
+            <td>Instructor Email</td>
+            <th>Instructor Branch</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Fname</td>
+            <td>@Model.Lname</td>
+            <td>@Model.Email</td>
+            <td>@Model.Branch.Name</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <a href="/Instructor/Index" class="btn btn-outline-primary">Back</a>
