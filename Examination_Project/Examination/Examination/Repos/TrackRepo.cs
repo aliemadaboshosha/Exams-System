@@ -12,7 +12,11 @@ namespace Examination.Repos
     public interface ITrackRepo
     {
         Task<List<Track>> GetAll();
+<<<<<<< HEAD
         Track GetById(int id);
+=======
+        Task<Track> GetById(int id);
+>>>>>>> Amira4
         Task Add(Track track);
         Task Delete(int id);
         Task Update(Track track);
@@ -25,6 +29,7 @@ namespace Examination.Repos
             this.db = db;
         }
 
+<<<<<<< HEAD
         public Track GetById(int id)
         {
            
@@ -33,6 +38,14 @@ namespace Examination.Repos
 
 
             return  db.Tracks.FromSql($"exec SelectTrackByID {id}").AsEnumerable().FirstOrDefault();
+=======
+        public async Task<Track> GetById(int id)
+        {
+           
+                var track = await db.Tracks.FromSqlRaw($"SELECT * FROM Track WHERE Id = {id}").FirstOrDefaultAsync();
+                return track;
+            //return await db.Tracks.FromSqlRaw($"exec SelectTrackByID {id}").FirstOrDefaultAsync();
+>>>>>>> Amira4
             //db.Tracks.FirstOrDefault(a=>a.Id == id);// without stored procedure
         }
 

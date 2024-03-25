@@ -1,25 +1,48 @@
+<<<<<<< HEAD
 ﻿@model TrackBranch
 @{
     ViewData["Title"] = "ShowBranchTracksByID";
 }
 <h1>ShowBranchTracksByID</h1>
+=======
+﻿@model List<TrackBranch>
+@{
+    ViewData["Title"] = "ShowBranchTracksByID";
+}
+<h1> Tracks of Branch :@Model[0].Branch.Name </h1>
+>>>>>>> Amira4
 
 <div style="text-align:center">
     <table class="table table-bordered">
         <thead class="thead-dark">
+<<<<<<< HEAD
             <tr>
                 <th>Branch Name</th>
+=======
+            <tr>>
+>>>>>>> Amira4
                 <th>Track ID</th>
                 <th>Supervisor</th>
             </tr>
         </thead>
         <tbody>
+<<<<<<< HEAD
              <tr>
                     <td>@Model.Branch.Name</td>
                     <td>@ViewBag.track.Name</td>
                     <td>@ViewBag.supervisor.Fname</td>
                 </tr>
            
+=======
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Track.Name</td>
+                    <td>@item.Supervisor.Fname</td>
+                </tr>
+            }
+
+>>>>>>> Amira4
         </tbody>
     </table>
     <a class="btn btn-info mt-2 w-25" href="/Branch/Index">Back</a>

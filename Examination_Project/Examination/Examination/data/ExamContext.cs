@@ -45,10 +45,15 @@ public partial class ExamContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseLazyLoadingProxies() // Enable lazy loading proxies
+<<<<<<< HEAD
                       //.UseSqlServer("Server=.;Database=Examination_System_DataBase;Integrated Security=true;TrustServerCertificate=true;");
                       .UseSqlServer("Server=DESKTOP-NP9ERV5\\SQLEXPRESS01;Database=Examination_System_DataBase;Integrated Security=true;TrustServerCertificate=true;");
     }
 
+=======
+                      .UseSqlServer("Server=.;Database=Examination_System_DataBase;Integrated Security=true;TrustServerCertificate=true;");
+    }
+>>>>>>> Amira4
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

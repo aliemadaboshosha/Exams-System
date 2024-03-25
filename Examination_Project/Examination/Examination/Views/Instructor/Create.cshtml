@@ -1,0 +1,78 @@
+﻿
+@model Instructor
+@{
+    ViewData["Title"] = "Create";
+    var br = ViewBag.Branches;
+    List<Branch> branches = br as List<Branch>;
+    SelectList allbarnches = new SelectList(branches,"Id","Name");
+}
+<div class="row">
+    <form method="post">
+
+        <div class="col-4 mb-3 d-inline-block ms-5">
+            <label asp-for="Fname">Fname</label>
+            <input asp-for="Fname" class="form-control" />
+            <span asp-validation-for="Fname"></span>
+        </div>
+
+        <div class="col-4 mb-3 d-inline-block ms-5">
+            <label asp-for="Lname">Lname</label>
+            <input asp-for="Lname" class="form-control" />
+            <span asp-validation-for="Lname"></span>
+        </div>
+
+        <div class="col-4 mb-3 d-inline-block ms-5">
+            <label asp-for="Gender">Gender:M / F</label>
+            <input asp-for="Gender" class="form-control" />
+            <span asp-validation-for="Gender"></span>
+        </div>
+
+        <div class="col-4 mb-3 d-inline-block ms-5">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div class="col-4 mb-3 d-inline-block ms-5">
+            <label asp-for="Password">Password </label>
+            <input asp-for="Password" class="form-control"/>
+            
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div class="col-4 mb-3  d-inline-block ms-5">
+            <label asp-for="Street">Street </label>
+            <input asp-for="Street" class="form-control " />
+            <span asp-validation-for="Street"></span>
+        </div>
+        <div class="col-4 mb-3 d-inline-block ms-5">
+            <label asp-for="City">City</label>
+            <input asp-for="City" class="form-control" />
+            <span asp-validation-for="City"></span>
+        </div>
+        <div class="col-4 mb-3 d-inline-block ms-5">
+            <label asp-for="DateOfBirth">DateOfBirth</label>
+            <input asp-for="DateOfBirth" type="date" class="form-control" />
+            <span asp-validation-for="DateOfBirth"></span>
+        </div>
+
+        <div class="col-4 mb-3 d-inline-block ms-5">
+            <label asp-for="Salary">Salary</label>
+            <input asp-for="Salary"  class="form-control" />
+            <span asp-validation-for="Salary"></span>
+        </div>
+
+        <div class="col-4  mb-3  d-inline-block ms-5">
+            <label asp-for="BranchId">Branch Name</label>
+            <select class="form-control" name="BranchId" asp-items="allbarnches">
+                <option>select branch</option>
+            </select>
+        </div>
+
+        <div class="col-4  mb-3  d-inline-block ms-5">
+            <button type="submit" class="btn btn-primary mt-4 w-25">Add</button>
+            <a class="btn btn-info mt-4 w-25" href="/Instructor/Index">Back</a>
+        </div>
+    </form>
+
+</div>
+
+

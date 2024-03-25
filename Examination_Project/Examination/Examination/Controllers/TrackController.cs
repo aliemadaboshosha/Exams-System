@@ -19,7 +19,11 @@ namespace Examination.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
+<<<<<<< HEAD
             var Track =  trackRepo.GetById(id.Value);
+=======
+            var Track = await trackRepo.GetById(id.Value);
+>>>>>>> Amira4
             if (Track == null)
             {
                 return NotFound();
@@ -50,7 +54,11 @@ namespace Examination.Controllers
             {
                 return BadRequest();
             }
+<<<<<<< HEAD
             var track =  trackRepo.GetById(id.Value);
+=======
+            var track = await trackRepo.GetById(id.Value);
+>>>>>>> Amira4
             if (track == null)
             {
                 return NotFound();
@@ -75,7 +83,11 @@ namespace Examination.Controllers
             {
                 return BadRequest();
             }
+<<<<<<< HEAD
             var track =  trackRepo.GetById(id.Value);
+=======
+            var track = await trackRepo.GetById(id.Value);
+>>>>>>> Amira4
             if (track == null)
             {
                 return NotFound();

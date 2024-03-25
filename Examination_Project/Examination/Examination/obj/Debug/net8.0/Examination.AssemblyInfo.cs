@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Examination")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+494adcefb46a2ef4ffab798c369b5020ef978100")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4482037088e05a786fb2336c01afdd5e1f99768")]
+>>>>>>> Amira4
 [assembly: System.Reflection.AssemblyProductAttribute("Examination")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Examination")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -23,13 +23,21 @@ namespace Examination.Controllers
             return View(students);
         }
 
+<<<<<<< HEAD
         public IActionResult Details(int ? id)
+=======
+        public async Task <IActionResult> Details(int ? id)
+>>>>>>> Amira4
         {
             if (id == null)
             {
                 return BadRequest();
             }
+<<<<<<< HEAD
             var student = studentRepo.GetById(id.Value);
+=======
+            var student =  studentRepo.GetById(id.Value);
+>>>>>>> Amira4
             if (student == null)
             {
                 return NotFound();
@@ -44,6 +52,7 @@ namespace Examination.Controllers
             List<Branch> branches = new List<Branch>();
             branches = await branchRepo.GetAll() ?? new List<Branch>();
             List<Track> tracks = await trackRepo.GetAll() ?? new List<Track>();
+<<<<<<< HEAD
   
 
             ViewBag.Branches = branches;
@@ -51,6 +60,12 @@ namespace Examination.Controllers
             ViewBag.Tracks = tracks;
                   Console.WriteLine(ViewBag.Tracks.Count);
 
+=======
+            ViewBag.Branches = branches;
+            Console.WriteLine(ViewBag.Branches.Count);
+            ViewBag.Tracks = tracks;
+            Console.WriteLine(ViewBag.Tracks.Count);
+>>>>>>> Amira4
             return View();
         }
 
@@ -62,13 +77,18 @@ namespace Examination.Controllers
                 await studentRepo.Add(student); // Assuming AddAsync is asynchronous
 
                 return RedirectToAction("Index");
+<<<<<<< HEAD
 
             }
 
+=======
+            }
+>>>>>>> Amira4
             ModelState.AddModelError("", "Invalid data");
             List<Branch> branches = new List<Branch>();
             branches = await branchRepo.GetAll() ?? new List<Branch>();
             List<Track> tracks = await trackRepo.GetAll() ?? new List<Track>();
+<<<<<<< HEAD
 
 
             ViewBag.Branches = branches;
@@ -80,6 +100,62 @@ namespace Examination.Controllers
         }
 
 
+=======
+            ViewBag.Branches = branches;
+            ViewBag.Tracks = tracks;
+            return View(student);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(int ? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+            var student = studentRepo.GetById(id.Value);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            List<Branch> branches = new List<Branch>();
+            branches = await branchRepo.GetAll() ?? [];
+            ViewBag.Branches = branches;
+            List<Track> tracks = await trackRepo.GetAll() ?? [];
+            ViewBag.Tracks = tracks;
+            return View(student);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(Student student)
+        {
+            if (!ModelState.IsValid)
+            {
+                List<Branch> branches = new List<Branch>();
+                branches = await branchRepo.GetAll() ?? [];
+                List<Track> tracks = await trackRepo.GetAll() ?? [];
+                ViewBag.Branches = branches;
+                ViewBag.Tracks = tracks;
+                return View(student);
+            }
+            await studentRepo.Update(student);
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+            var student = studentRepo.GetById(id.Value);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            await studentRepo.Delete(id.Value);
+            return RedirectToAction("Index");
+        }
+>>>>>>> Amira4
 
     }
 }

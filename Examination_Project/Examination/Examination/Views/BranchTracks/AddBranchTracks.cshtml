@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 ﻿@model Branch
 @{
     ViewData["Title"] = "AddBranchTracks";
+=======
+﻿@* @model Branch
+@{
+    ViewData["Title"] = "AddBranchTracks";
+
+>>>>>>> Amira4
     List<Track> tracks = ViewBag.tracks as List<Track>;
     //SelectList alltracks = new SelectList(tracks, "Id", "Name");
     SelectList alltracks = tracks != null ? new SelectList(tracks, "Id", "Name") : new SelectList(new List<Track>(), "Id", "Name");
@@ -8,8 +15,48 @@
     List<Instructor> instructors = ViewBag.instructors as List<Instructor>;
    // SelectList allinstructors = new SelectList(instructors, "Id", "Fname");
     SelectList allinstructors = instructors != null ? new SelectList(instructors, "Id", "Fname") : new SelectList(new List<Instructor>(), "Id", "Fname");
+<<<<<<< HEAD
 
 }
 
 <h1>AddBranchTracks</h1>
+=======
+} *@
+
+@model Branch
+@{
+    ViewData["Title"] = "AddBranchTracks";
+}
+<h1>Add Branch Tracks</h1>
+
+<div>
+    <h4>Branch: @Model.Name</h4>
+    <hr/>
+    <form method="post">
+        <div class="form-group">
+            <label for="trackId">Select Track:</label>
+            <select class="form-control" id="trackId" name="trackId">
+                <option >select Track</option>
+                @foreach (var track in ViewBag.Tracks)
+                {
+                    <option value="@track.Id">@track.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="instructorId">Select Supervisor:</label>
+            <select class="form-control" id="instructorId" name="instructorId">
+                <option>select Supervisor</option>
+                @foreach (var instructor in ViewBag.Instructors)
+                {
+                    <option value="@instructor.Id">@instructor.Fname</option>
+                }
+            </select>
+        </div>
+        <input type="hidden" name="branchId" value="@Model.Id" />
+        <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+</div>
+
+>>>>>>> Amira4
 
