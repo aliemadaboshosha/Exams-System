@@ -3,8 +3,68 @@
   "WorkspaceRootPath": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\project-examination system\\examination_project\\examination\\examination\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\project-examination system\\examination_project\\examination\\examination\\repos\\questionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\repos\\questionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\project-examination system\\examination_project\\examination\\examination\\repos\\instructorrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\repos\\instructorrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\data\\examcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\data\\examcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\views\\branchtracks\\showbranchtracksbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\views\\branchtracks\\showbranchtracksbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\views\\branch\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\views\\branch\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\views\\branchtracks\\addbranchtracks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\views\\branchtracks\\addbranchtracks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\repos\\trackrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\repos\\trackrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\repos\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\repos\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\repos\\branchrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\repos\\branchrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\controllers\\trackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\controllers\\trackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\examination\\controllers\\branchtrackscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\controllers\\branchtrackscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Examination.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Examination\\Examination.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +74,204 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuestionRepo.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\QuestionRepo.cs",
+              "RelativeDocumentMoniker": "Examination\\Repos\\QuestionRepo.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\QuestionRepo.cs",
+              "RelativeToolTip": "Examination\\Repos\\QuestionRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T09:23:26.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InstructorRepo.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\InstructorRepo.cs",
+              "RelativeDocumentMoniker": "Examination\\Repos\\InstructorRepo.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\InstructorRepo.cs",
+              "RelativeToolTip": "Examination\\Repos\\InstructorRepo.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAuwCUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T09:14:01.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddBranchTracks.cshtml",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\BranchTracks\\AddBranchTracks.cshtml",
+              "RelativeDocumentMoniker": "Examination\\Views\\BranchTracks\\AddBranchTracks.cshtml",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\BranchTracks\\AddBranchTracks.cshtml",
+              "RelativeToolTip": "Examination\\Views\\BranchTracks\\AddBranchTracks.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-25T08:51:14.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TrackRepo.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\TrackRepo.cs",
+              "RelativeDocumentMoniker": "Examination\\Repos\\TrackRepo.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\TrackRepo.cs",
+              "RelativeToolTip": "Examination\\Repos\\TrackRepo.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAtwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:50:51.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentRepo.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\StudentRepo.cs",
+              "RelativeDocumentMoniker": "Examination\\Repos\\StudentRepo.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\StudentRepo.cs",
+              "RelativeToolTip": "Examination\\Repos\\StudentRepo.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAArwHcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:50:06.809Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Program.cs",
+              "RelativeDocumentMoniker": "Examination\\Program.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Program.cs",
+              "RelativeToolTip": "Examination\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAD4vxcAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:49:34.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExamContext.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\data\\ExamContext.cs",
+              "RelativeDocumentMoniker": "Examination\\data\\ExamContext.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\data\\ExamContext.cs",
+              "RelativeToolTip": "Examination\\data\\ExamContext.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAMwC8AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:49:26.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "QuestionController.cs",
               "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\QuestionController.cs",
               "RelativeDocumentMoniker": "Examination\\Controllers\\QuestionController.cs",
               "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\QuestionController.cs",
               "RelativeToolTip": "Examination\\Controllers\\QuestionController.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAmwJMAAAAZAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAJMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T08:26:58.602Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShowBranchTracksByID.cshtml",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\BranchTracks\\ShowBranchTracksByID.cshtml",
+              "RelativeDocumentMoniker": "Examination\\Views\\BranchTracks\\ShowBranchTracksByID.cshtml",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\BranchTracks\\ShowBranchTracksByID.cshtml",
+              "RelativeToolTip": "Examination\\Views\\BranchTracks\\ShowBranchTracksByID.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-25T08:52:31.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\Branch\\Index.cshtml",
+              "RelativeDocumentMoniker": "Examination\\Views\\Branch\\Index.cshtml",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\Branch\\Index.cshtml",
+              "RelativeToolTip": "Examination\\Views\\Branch\\Index.cshtml",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwCcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-25T08:53:56.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Examination\\Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "Examination\\Views\\Student\\Index.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwCQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-25T08:55:58.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BranchRepo.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\BranchRepo.cs",
+              "RelativeDocumentMoniker": "Examination\\Repos\\BranchRepo.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\BranchRepo.cs",
+              "RelativeToolTip": "Examination\\Repos\\BranchRepo.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAjwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:49:59.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TrackController.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\TrackController.cs",
+              "RelativeDocumentMoniker": "Examination\\Controllers\\TrackController.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\TrackController.cs",
+              "RelativeToolTip": "Examination\\Controllers\\TrackController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAIAywE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:49:02.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Examination\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Examination\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAWwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:48:13.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BranchTracksController.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\BranchTracksController.cs",
+              "RelativeDocumentMoniker": "Examination\\Controllers\\BranchTracksController.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\BranchTracksController.cs",
+              "RelativeToolTip": "Examination\\Controllers\\BranchTracksController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAjwDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:47:28.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Examination.csproj.user",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Examination.csproj.user",
+              "RelativeDocumentMoniker": "Examination\\Examination.csproj.user",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Examination.csproj.user",
+              "RelativeToolTip": "Examination\\Examination.csproj.user",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-03-25T08:45:00.651Z"
             }
           ]
         }

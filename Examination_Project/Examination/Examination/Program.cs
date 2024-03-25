@@ -20,14 +20,9 @@ namespace Examination
             builder.Services.AddScoped<IBranchRepo, BranchRepo>();
             builder.Services.AddScoped<ITrackRepo,TrackRepo>();
             builder.Services.AddScoped<IstudentRepo, StudentRepo>();
-<<<<<<< HEAD
+            builder.Services.AddScoped<IInstructorRepo , InstructorRepo>();
             builder.Services.AddScoped<IQuestionRepo, QuestionRepo>();
 
-
-=======
-            builder.Services.AddScoped<IInstructorRepo , InstructorRepo>();
-
->>>>>>> Amira4
             builder.Services.AddDbContext<ExamContext>(a =>
           a.UseSqlServer(builder.Configuration.GetConnectionString("Conn1")));
 
@@ -46,11 +41,7 @@ namespace Examination
 
             app.MapControllerRoute(
                 name: "default",
-<<<<<<< HEAD
-                pattern: "{controller=Student}/{action=Index}/{id?}");
-=======
                 pattern: "{controller=Instructor}/{action=Index}/{id?}");
->>>>>>> Amira4
 
             app.Run();
         }

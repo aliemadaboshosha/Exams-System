@@ -60,10 +60,6 @@ namespace Examination.Repos
             );
             await db.SaveChangesAsync();
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> Amira4
         public async Task Delete(int id)
         {
             await db.Database.ExecuteSqlRawAsync($"exec DeleteBranchByID {id}");

@@ -1,12 +1,8 @@
 ﻿using Examination.data;
 using Microsoft.AspNetCore.Mvc;
-<<<<<<< HEAD
-using Microsoft.EntityFrameworkCore;
-=======
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
->>>>>>> Amira4
 
 namespace Examination.Controllers
 {
@@ -17,25 +13,6 @@ namespace Examination.Controllers
             db = _examContext;
         }
 
-<<<<<<< HEAD
-        public IActionResult ShowBranchTracksByID( int id)
-        {
-            var branchTracks = db.TrackBranches.Include(a=>a.Branch).Include(a=>a.Track).Include(a=>a.Supervisor)
-                .FirstOrDefault(a=>a.BranchId == id);
-                ViewBag.branch = branchTracks.Branch;
-                ViewBag.track = branchTracks.Track;
-                ViewBag.supervisor = branchTracks.Supervisor;
-            return View(branchTracks);
-        }
-
-        public IActionResult AddBranchTracks(int ?branchID)
-        {
-            if (branchID == null)
-            {
-                return BadRequest();    
-            }
-            var branch = db.Branches.Include(b => b.Instructors).FirstOrDefault(a=> a.Id == branchID);  
-=======
         //public IActionResult ShowBranchTracksByID( int id)
         //{
         //    var branchTracks = db.TrackBranches.Include(a=>a.Branch).Include(a=>a.Track).Include(a=>a.Supervisor)
@@ -72,19 +49,10 @@ namespace Examination.Controllers
                 return BadRequest();    
             }
             var branch = db.Branches.Include(b => b.Instructors).FirstOrDefault(a=> a.Id == branchId);  
->>>>>>> Amira4
             if (branch == null)
             {
                 return NotFound();
             }
-<<<<<<< HEAD
-            ViewBag.courses = db.Courses.ToList();
-            ViewBag.tracks = db.Tracks.ToList();
-            ViewBag.instructors = db.Instructors.ToList();  
-            return View(branch);    
-        }
-
-=======
             // i want user to select only the tracks that are not already found in TrackBranches Tabel
 
             var allTracks = db.Tracks.ToList(); // all tracks 
@@ -123,7 +91,6 @@ namespace Examination.Controllers
             }
 
         }
->>>>>>> Amira4
 
     }
 }

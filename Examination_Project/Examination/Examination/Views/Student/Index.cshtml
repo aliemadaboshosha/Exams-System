@@ -33,11 +33,9 @@
                     <td><a asp-action="Details" asp-controller="Student" asp-route-id="@item.ID">Show</a></td>
                     <td><a asp-action="Update" asp-controller="Student" asp-route-id="@item.ID">Edit</a></td>
                     <td>
-<<<<<<< HEAD
-                        <a asp-controller="item" asp-action="Delete" asp-route-id="@item.ID"
-=======
+
                         <a asp-controller="Student" asp-action="Delete" asp-route-id="@item.ID"
->>>>>>> Amira4
+
                            onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
                     </td>
                 </tr>

@@ -1,31 +1,7 @@
-<<<<<<< HEAD
-﻿@model Branch
-@{
-    ViewData["Title"] = "AddBranchTracks";
-=======
-﻿@* @model Branch
-@{
-    ViewData["Title"] = "AddBranchTracks";
-
->>>>>>> Amira4
-    List<Track> tracks = ViewBag.tracks as List<Track>;
-    //SelectList alltracks = new SelectList(tracks, "Id", "Name");
-    SelectList alltracks = tracks != null ? new SelectList(tracks, "Id", "Name") : new SelectList(new List<Track>(), "Id", "Name");
-
-    List<Instructor> instructors = ViewBag.instructors as List<Instructor>;
-   // SelectList allinstructors = new SelectList(instructors, "Id", "Fname");
-    SelectList allinstructors = instructors != null ? new SelectList(instructors, "Id", "Fname") : new SelectList(new List<Instructor>(), "Id", "Fname");
-<<<<<<< HEAD
-
-}
-
-<h1>AddBranchTracks</h1>
-=======
-} *@
-
 @model Branch
 @{
     ViewData["Title"] = "AddBranchTracks";
+
 }
 <h1>Add Branch Tracks</h1>
 
@@ -58,5 +34,5 @@
     </form>
 </div>
 
->>>>>>> Amira4
+
 

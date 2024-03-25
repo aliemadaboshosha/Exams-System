@@ -26,7 +26,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\PD(ITI Mansoura)\AdvancedSQL\Project-Examination System\Examination_Project\Examination\Examination
 build_property._RazorSourceGeneratorDebug = 
 
-<<<<<<< HEAD
 [D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/BranchTracks/AddBranchTracks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoVHJhY2tzXEFkZEJyYW5jaFRyYWNrcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,37 +55,6 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Home/Index.cshtml]
-=======
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/BranchTracks/AddBranchTracks.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoVHJhY2tzXEFkZEJyYW5jaFRyYWNrcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/BranchTracks/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoVHJhY2tzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/BranchTracks/ShowBranchTracksByID.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoVHJhY2tzXFNob3dCcmFuY2hUcmFja3NCeUlELmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Branch/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Branch/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Branch/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Branch/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXFVwZGF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Home/Index.cshtml]
->>>>>>> Amira4
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -94,7 +62,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
+[D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Instructor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Instructor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Instructor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Instructor/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/PartialViews/details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXGRldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -120,25 +103,6 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Shared/Error.cshtml]
-=======
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Instructor/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Instructor/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Instructor/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Instructor/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Shared/Error.cshtml]
->>>>>>> Amira4
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -146,7 +110,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
 [D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Student/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -157,6 +120,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Student/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/Track/Create.cshtml]
@@ -176,41 +143,6 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PD(ITI Mansoura)/AdvancedSQL/Project-Examination System/Examination_Project/Examination/Examination/Views/_ViewImports.cshtml]
-=======
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Student/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Student/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Student/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Student/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Track/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Track/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Track/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Track/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcVXBkYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/_ViewImports.cshtml]
->>>>>>> Amira4
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
