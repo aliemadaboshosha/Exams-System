@@ -10,6 +10,17 @@ BEGIN
     WHERE ID = @id;
 END;
 
+<<<<<<< HEAD
+=======
+Create PROCEDURE getBranches
+AS
+BEGIN
+    SELECT *
+    FROM Branch
+END;
+
+
+>>>>>>> origin/Rahek2
 CREATE PROCEDURE insertBranch
     @name NVARCHAR(30),
     @Building_Number int,
@@ -31,7 +42,11 @@ update branch set Name = @name
 where ID = @id
 end;
 
+<<<<<<< HEAD
 CREATE PROCEDURE updateBranchByID
+=======
+CREATE PROCEDURE update_BranchByID
+>>>>>>> origin/Rahek2
     @id INT,
     @name VARCHAR(30),
     @Building_Number int,
@@ -47,26 +62,40 @@ BEGIN
     WHERE ID = @id;
 END;
 
+<<<<<<< HEAD
 --------------- execute updateBranchByID  2,'Program',4,'here','Alex'------------
 
 
 CREATE PROCEDURE DeleteBranchByID
+=======
+--------------- execute update_BranchByID  2,'Program',4,'here','Alex'------------
+
+
+Alter PROCEDURE DeleteBranchByID
+>>>>>>> origin/Rahek2
     @id INT
 AS
 BEGIN
     DELETE FROM Branch
+<<<<<<< HEAD
     WHERE ID = @id;
+=======
+    WHERE ID = @id
+>>>>>>> origin/Rahek2
 END;
 
 -------- execute DeleteBranchByID 3 -----------
 
 
+<<<<<<< HEAD
 CREATE PROCEDURE DeleteBranch  
 AS
 BEGIN
     DELETE FROM Branch
 END;
 
+=======
+>>>>>>> origin/Rahek2
 ------ Track -----------
 CREATE PROCEDURE GetTracks
 AS
@@ -86,7 +115,11 @@ AS
 BEGIN
     SELECT *
     FROM Track
+<<<<<<< HEAD
     WHERE ID = @id;
+=======
+    WHERE ID = @id
+>>>>>>> origin/Rahek2
 END;
 
 ----- SelectTrackByID 1 ------

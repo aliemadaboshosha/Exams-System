@@ -16,10 +16,13 @@
             <th>Details</th>
             <th>Update</th>
             <th>Delete</th>
+<<<<<<< HEAD
             <th>Show tracks</th>
 
             <th>Add tracks</th>
 
+=======
+>>>>>>> origin/Rahek2
         </tr>
     </thead>
     <tbody>
@@ -35,9 +38,11 @@
                         <a asp-controller="Branch" asp-action="Delete" asp-route-id="@branch.Id"
                            onclick="return confirm('Are you sure you want to delete this Branch?')">Delete</a>
                     </td>
+
                     <td><a asp-action="ShowBranchTracksByID" asp-controller="BranchTracks" asp-route-id="@branch.Id">Show Tracks</a></td>
 
                     <td><a asp-action="AddBranchTracks" asp-controller="BranchTracks" asp-route-branchId="@branch.Id">add Tracks</a></td>
+
 
             </tr>
         }

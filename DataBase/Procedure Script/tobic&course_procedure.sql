@@ -30,7 +30,7 @@ END;
 GO
 
 -- Stored Procedure to delete a Course
-CREATE PROCEDURE DeleteCourse
+CREATE PROCEDURE DeleteCourseByID
     @course_id INT
 AS
 BEGIN
@@ -58,13 +58,15 @@ END;
 GO
 
 -- Stored Procedure to update a Topic
-CREATE PROCEDURE UpdateTopic
+alter PROCEDURE UpdateTopic
     @topic_id INT,
     @new_topic_name NVARCHAR(20),
     @new_course_id INT
 AS
 BEGIN
-    UPDATE Topic SET Name = @new_topic_name, course_ID = @new_course_id WHERE ID = @topic_id;
+    UPDATE Topic
+	SET Name = @new_topic_name
+	WHERE ID = @topic_id and course_ID = @new_course_id
 END;
 GO
 
@@ -76,3 +78,22 @@ BEGIN
     DELETE FROM Topic WHERE ID = @topic_id;
 END;
 GO
+
+
+CREATE PROCEDURE getCourses
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    SELECT * FROM course;
+END;
+
+
+
+CREATE PROCEDURE getTopics
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    SELECT * FROM Topic;
+END;

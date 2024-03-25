@@ -1,0 +1,29 @@
+﻿@model Topic
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <div>
+        <label asp-for="CourseId">Course</label>
+        <select asp-for="CourseId" class="form-control">
+            <option value="">-- Select Course --</option>
+            @foreach (var course in ViewBag.Courses)
+            {
+                <option value="@course.Id">@course.Name</option>
+            }
+        </select>
+        <span asp-validation-for="CourseId"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4 w-25">Add</button>
+</form>
+<a class="btn btn-info mt-2 w-25" href="/Topic/Index">Back</a>

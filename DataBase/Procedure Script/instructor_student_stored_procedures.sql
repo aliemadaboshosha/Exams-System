@@ -147,3 +147,8 @@ BEGIN
 END;
 
 
+CREATE PROCEDURE GetIstructors
+AS
+BEGIN
+    SELECT * FROM Instructor;
+END;
