@@ -23,12 +23,12 @@ namespace Examination.Controllers
         //    return View(branchTracks);
         //}
      
-
+        // Branch ID
         public IActionResult ShowBranchTracksByID(int id)
         {
             var branchTracks = db.TrackBranches
                 .Where(a => a.BranchId == id)
-                .Include(a => a.Branch)
+                .Include(a => a.Branch)// I ENABLED LAZY LOAD SO I CAN DO ANY INCLUDE AND ACCEES THEM DIRECTLY IN VIEW
                 .Include(a => a.Track)
                 .Include(a => a.Supervisor)
                 .ToList();
@@ -42,7 +42,7 @@ namespace Examination.Controllers
         }
 
         [HttpGet]
-        public IActionResult AddBranchTracks(int ? branchId)
+        public IActionResult AddBranchTracks(int ? branchId)// ADD TRACK AND TRACK SUPERVISOR
         {
             if (branchId == null)
             {
@@ -56,6 +56,7 @@ namespace Examination.Controllers
             // i want user to select only the tracks that are not already found in TrackBranches Tabel
 
             var allTracks = db.Tracks.ToList(); // all tracks 
+            // get already  tracks assigned to  the selected branch
             var branchTracks = db.TrackBranches.Where(a => a.BranchId == branchId).Select(a => a.Track);
             var availableTracks = allTracks.Except(branchTracks).ToList();
             ViewBag.Tracks = availableTracks;

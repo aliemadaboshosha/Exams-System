@@ -1,0 +1,64 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1 class="text-center">Admin Home</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Branch</h5>
+                    <p class="card-text"> Add, edit, delete ,Show Tracks,Add Tracks</p>
+                    <a href="/Branch/Index" class="btn btn-primary btn-block">Go to Branch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"> Track/ Department</h5>
+                    <p class="card-text">Add, Edit, Delete Tracks,Show all students in track ,Add Courses to the track</p>
+                    <a href="/Track/Index" class="btn btn-primary btn-block">Go to Track</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"> Students</h5>
+                    <p class="card-text">Show all students, Add ,Edit,Delete</p>
+                    <a asp-action="Index" asp-controller="Student" class="btn btn-primary btn-block">Go to Students</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Instructors</h5>
+                    <p class="card-text">Show all Instructors, Add ,Edit,Delete</p>
+                    <a asp-action="Index" asp-controller="Instructor" class="btn btn-primary btn-block">Go to Instructors</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"> Course </h5>
+                    <p class="card-text">Add, Edit, Delete Courses and topics associated with them</p>
+                    <a href="/Course/Index" class="btn btn-primary btn-block">Go to Course</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+

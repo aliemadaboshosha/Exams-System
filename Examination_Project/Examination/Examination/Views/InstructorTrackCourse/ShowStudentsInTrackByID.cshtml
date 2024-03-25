@@ -1,0 +1,33 @@
+﻿@model List<Student>
+@{
+    ViewData["Title"] = "ShowStudentsInTrackByID";
+}
+
+<h1>Students InTrack <span style="color:blueviolet">@Model[0].Track.Name</span></h1>
+
+<div style="text-align:center">
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+                <th>Student ID</th>
+                <th>Student Fname</th>
+                <th>Student Lname</th>
+                <th>Student Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Fname</td>
+                <td>@item.Lname</td>
+                <td>@item.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+    <a href="/Track/Index" class="btn btn-info  mt-4 ms-4">Back</a>
+</div>
+
+

@@ -16,6 +16,9 @@
                 <th>Details</th>
                 <th>Update</th>
                 <th>Delete</th>
+                <th>Show Courses</th>
+                <th>Add Courses</th>
+                <th>Show Students</th>
             </tr>
         </thead>
         <tbody>
@@ -24,12 +27,16 @@
                 <tr>
                     <td>@track.Id</td>
                     <td>@track.Name</td>
-                    <td><a asp-action="Details" asp-controller="Track" asp-route-id="@track.Id">Show</a></td>
-                    <td><a asp-action="Update" asp-controller="Track" asp-route-id="@track.Id">Edit</a></td>
+                    <td><a class=" btn btn-primary" asp-action="Details" asp-controller="Track" asp-route-id="@track.Id">Show</a></td>
+                    <td><a class="btn btn-info" asp-action="Update" asp-controller="Track" asp-route-id="@track.Id">Edit</a></td>
                     <td>
-                        <a asp-controller="Track" asp-action="Delete" asp-route-id="@track.Id"
+                        <a class="btn btn-danger" asp-controller="Track" asp-action="Delete" asp-route-id="@track.Id"
                            onclick="return confirm('Are you sure you want to delete this Track?')">Delete</a>
                     </td>
+                    <td><a class="btn btn-warning" asp-action="ShowCoursesInTrackByID" asp-controller="InstructorTrackCourse" asp-route-trackID="@track.Id">Show Courses</a></td>
+                    <td><a class="btn btn-success" asp-action="AddCoursesInTrackByID" asp-controller="InstructorTrackCourse" asp-route-trackId="@track.Id">Add Course</a></td>
+                    <td><a class="btn btn-success" asp-action="ShowStudentsInTrackByID" asp-controller="InstructorTrackCourse" asp-route-trackId="@track.Id">List Students</a></td>
+
                 </tr>
             }
         </tbody>

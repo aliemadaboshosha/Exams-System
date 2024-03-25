@@ -3,14 +3,12 @@
     ViewData["Title"] = "AddBranchTracks";
 
 }
-<h1>Add Branch Tracks</h1>
+<h1>Add Tracks in Branch :@Model.Name</h1>
 
 <div>
-    <h4>Branch: @Model.Name</h4>
-    <hr/>
-    <form method="post">
+    <form method="post" id="branchTracksForm">
         <div class="form-group">
-            <label for="trackId">Select Track:</label>
+            <label for="trackId" class="mb-2"> Track:</label>
             <select class="form-control" id="trackId" name="trackId">
                 <option >select Track</option>
                 @foreach (var track in ViewBag.Tracks)
@@ -20,7 +18,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="instructorId">Select Supervisor:</label>
+            <label for="instructorId" class="mb-2"> Supervisor:</label>
             <select class="form-control" id="instructorId" name="instructorId">
                 <option>select Supervisor</option>
                 @foreach (var instructor in ViewBag.Instructors)
@@ -30,9 +28,21 @@
             </select>
         </div>
         <input type="hidden" name="branchId" value="@Model.Id" />
-        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="submit" class="btn btn-primary mt-4" @(ViewBag.Tracks.Capacity == 0 ? "disabled" : "")>Add</button>
+        <a href="/Branch/Index" class="btn btn-info   mt-4 ms-4">Back</a>
     </form>
 </div>
+<script>
+    document.getElementById('branchTracksForm').addEventListener('submit', function (event) {
+        var trackId = document.getElementById('trackId').value;
+        var instructorId = document.getElementById('instructorId').value;
+
+        if (!trackId || !instructorId) {
+            event.preventDefault(); // Prevent form submission if supervisor or track is not selected
+            alert('Please select both a supervisor and a track.');
+        }
+    });
+</script>
 
 
 

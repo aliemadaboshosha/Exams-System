@@ -30,12 +30,11 @@
                     <td>@item.Fname</td>
                     <td>@item.Branch.Name</td>
                     <td>@item.Track.Name</td>
-                    <td><a asp-action="Details" asp-controller="Student" asp-route-id="@item.ID">Show</a></td>
-                    <td><a asp-action="Update" asp-controller="Student" asp-route-id="@item.ID">Edit</a></td>
+                    <td><a class=" btn btn-primary" asp-action="Details" asp-controller="Student" asp-route-id="@item.ID">Show</a></td>
+                    <td><a class="btn btn-info" asp-action="Update" asp-controller="Student" asp-route-id="@item.ID">Edit</a></td>
                     <td>
 
-                        <a asp-controller="Student" asp-action="Delete" asp-route-id="@item.ID"
-
+                        <a class ="btn btn-danger" asp-controller="Student" asp-action="Delete" asp-route-id="@item.ID"
                            onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
                     </td>
                 </tr>

@@ -1,0 +1,43 @@
+﻿@model Track
+@{
+    ViewData["Title"] = "AddCoursesInTrackByID";
+    List<Course> courses = ViewBag.Courses;
+    List<Instructor> instructors = ViewBag.instructors;
+}
+
+
+<div>
+    <h4> Add Courses in Track: @Model.Name</h4><br />
+  
+    <form method="post">
+        <div class="form-group">
+            <label for="crsId" class="mb-2">Select Course:</label>
+            <select class="form-control" id="crsId" name="crsId">
+                @*trackId : must be the same as in action parameter in post action*@
+                <option>select Course</option>
+                @foreach (var Course in courses)
+                {
+                    <option value="@Course.Id">@Course.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="instructorId" class="mb-2">Select instructors:</label>
+            <select class="form-control" id="instructorId" name="instructorId">
+                <option>select Supervisor</option>
+                @foreach (var instructor in instructors)
+                {
+                    <option value="@instructor.Id">@instructor.Fname</option>
+                }
+            </select>
+        </div>
+        <input type="hidden" name="trackId" value="@Model.Id" />@*to be submitted to server *@
+        @* (courses.Capacity == 0 ? "disabled" : "") : if there is no courses available or the all courses are in the track disable add *@
+        <button type="submit" class="btn btn-primary mt-4" @(courses.Capacity == 0 ? "disabled" : "")>Add</button>
+        <a href="/Track/Index" class="btn btn-info  mt-4 ms-4">Back</a>
+    </form>
+    
+
+</div>
+
+

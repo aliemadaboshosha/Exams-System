@@ -1,6 +1,7 @@
 ﻿using Examination.data;
 using Examination.Models;
 using Examination.Repos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,13 +17,14 @@ namespace Examination.Controllers
             this.branchRepo = branchRepo;
             this.trackRepo = trackRepo;
         }
+        [Authorize(Roles = "Admin,Instructor")]// admin or instructor
         public IActionResult Index()
         {
             var students = studentRepo.GetAll();
 
             return View(students);
         }
-
+        [Authorize(Roles = "Admin,Instructor")]
         public async Task <IActionResult> Details(int ? id)
         {
             if (id == null)
@@ -38,6 +40,7 @@ namespace Examination.Controllers
             return View(student);
 
         }
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Create()
         {
@@ -50,7 +53,7 @@ namespace Examination.Controllers
             Console.WriteLine(ViewBag.Tracks.Count);
             return View();
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(Student student)
         {
@@ -69,6 +72,7 @@ namespace Examination.Controllers
             return View(student);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Update(int ? id)
         {
@@ -103,6 +107,7 @@ namespace Examination.Controllers
             await studentRepo.Update(student);
             return RedirectToAction("Index");
         }
+        [Authorize(Roles = "Admin")]
 
         public async Task<IActionResult> Delete(int? id)
         {

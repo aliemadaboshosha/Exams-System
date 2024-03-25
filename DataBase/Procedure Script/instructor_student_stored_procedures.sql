@@ -35,6 +35,13 @@ As
 begin
 	SELECT * FROM Student ;
 End
+---- get students in a sepcific track
+create procedure GetStudentsByTrackID
+@id int 
+As 
+begin 
+	select * from Student where Track_ID=@id ;
+End
 
 
 --update
@@ -145,6 +152,15 @@ AS
 BEGIN
     DELETE FROM Instructor WHERE ID = @InstructorID;
 END;
+
+-----------get  all instructors 
+ALTER PROCEDURE [dbo].[GetIstructors]
+As
+BEGIN
+
+    select * from Instructor ;
+END
+
 
 
 CREATE PROCEDURE GetIstructors

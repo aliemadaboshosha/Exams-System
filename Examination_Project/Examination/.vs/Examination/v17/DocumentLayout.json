@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\project-examination system\\examination_project\\examination\\examination\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\project-examination system\\examination_project\\examination\\examination\\views\\branch\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\views\\branch\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\project-examination system\\examination_project\\examination\\examination\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Examination\\Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "Examination\\Views\\Student\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-25T22:27:56.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\Branch\\Index.cshtml",
+              "RelativeDocumentMoniker": "Examination\\Views\\Branch\\Index.cshtml",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Views\\Branch\\Index.cshtml",
+              "RelativeToolTip": "Examination\\Views\\Branch\\Index.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-25T22:26:53.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TopicController.cs",
               "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Controllers\\TopicController.cs",
               "RelativeDocumentMoniker": "Examination\\Controllers\\TopicController.cs",
@@ -35,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TopicRepo.cs",
               "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Project-Examination System\\Examination_Project\\Examination\\Examination\\Repos\\TopicRepo.cs",
               "RelativeDocumentMoniker": "Examination\\Repos\\TopicRepo.cs",
