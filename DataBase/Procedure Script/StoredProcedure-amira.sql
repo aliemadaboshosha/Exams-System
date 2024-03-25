@@ -68,6 +68,17 @@ BEGIN
 END;
 
 ------ Track -----------
+CREATE PROCEDURE GetTracks
+AS
+BEGIN
+Begin Try 
+    SELECT *
+    FROM Track
+End Try
+begin catch
+	select 'no tracks found'
+End catch
+END;
 
 CREATE PROCEDURE SelectTrackByID
     @id INT

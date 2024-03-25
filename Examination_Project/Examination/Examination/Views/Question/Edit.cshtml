@@ -1,0 +1,242 @@
+﻿@model Examination.Models.Question
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Question</h4>
+<hr />
+<div class="row">
+    <div class="row">
+        <div class="col-sm-6">
+            <span class="topic-details">
+            <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Topic.Course)
+            </dt>
+            <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Topic.Course.Name)
+            </dd>
+            </span>
+        </div>
+        <div class="col-sm-6">
+            <span class="topic-details">
+            <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Topic)
+            </dt>
+            <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Topic.Name)
+            </dd>
+            </span>
+        </div>
+    </div>
+    <hr />
+    <div >
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group" hidden>
+                <label asp-for="CourseId" class="control-label"></label>
+                <select id="courseSelect" asp-for="CourseId" class="form-control custom-select" asp-items="ViewBag.CourseId">
+                    <option value="">Choose the Course</option>
+                </select>
+                <span asp-validation-for="CourseId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group" hidden>
+                <label asp-for="TopicId" class="control-label"></label>
+                <select id="topicSelect" asp-for="TopicId" class="form-control custom-select">
+                    <!-- Options will be dynamically populated based on the selection made in the 'CourseId' dropdown -->
+                </select>
+                <span asp-validation-for="TopicId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group" hidden>
+                <label asp-for="QuestionType" class="control-label"></label>
+                <select asp-for="QuestionType" class="form-control custom-select">
+                    <option value="">Choose the Question Type</option>
+                    <option value="False">True/False Question</option>
+                    <option value="True">Multi-choice Question</option>
+                </select>
+                <span asp-validation-for="QuestionType" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="QuestionBody" class="control-label"></label>
+                <textarea asp-for="QuestionBody" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="QuestionBody" class="text-danger"></span>
+            </div>
+
+
+            @*    <div class="form-group">
+            <label asp-for="QuestionBody" class="control-label"></label>
+            <input asp-for="QuestionBody" class="form-control" />
+            <span asp-validation-for="QuestionBody" class="text-danger"></span>
+            </div> *@
+            @* <div class="form-group form-check">
+            <label class="form-check-label">
+            <input class="form-check-input" asp-for="QuestionType" /> @Html.DisplayNameFor(model => model.QuestionType)
+            </label>
+            </div> *@
+
+
+            @*   <div class="form-group">
+            <label asp-for="QuestionAnswer" class="control-label"></label>
+            <input asp-for="QuestionAnswer" class="form-control" />
+            <span asp-validation-for="QuestionAnswer" class="text-danger"></span>
+            </div> *@
+
+
+
+            <!-- Section for True/False questions -->
+            @if (!Model.QuestionType)
+            {
+                <div id="trueFalseSection" >
+                    
+                    @if(Model.QuestionAnswer==0)
+                    {
+
+                        <div class="form-group alert alert-success">
+                            <input type="radio" name="QuestionAnswer" value="0" checked class="form-check-input " /> <!-- Value 0 for False -->
+                            <label class="control-label">False</label>
+                        </div>
+                        <div class="form-group alert alert-secondary">
+                            <input type="radio" name="QuestionAnswer" value="1" class="form-check-input " /> <!-- Value 1 for True -->
+                            <label class="control-label">True</label>
+                        </div>
+                    }
+                    else if(Model.QuestionAnswer==1)
+                    {
+                        <div class="form-group alert alert-secondary">
+                            <input type="radio" name="QuestionAnswer" value="0" class="form-check-input " /> <!-- Value 0 for False -->
+                            <label class="control-label">False</label>
+                        </div>
+                        <div class="form-group alert alert-success" >
+                            <input type="radio" name="QuestionAnswer" value="1" checked class="form-check-input " /> <!-- Value 1 for True -->
+                            <label class="control-label">True</label>
+                        </div>
+                    }
+                    <hr />
+              
+            </div>
+            } 
+            else
+            {
+
+            <!-- Section for Multi-choice questions -->
+            <div id="multiChoiceSection" >
+                <h4>Multi-choice Question Answer</h4>
+                <hr />
+                @foreach (var item in Model.MultiChoicesQuestionAnswers)
+                {
+                    string ID=$"MultiChoice{item.NumberOfChoice}";
+                    if (item.NumberOfChoice == Model.QuestionAnswer)
+                    {
+                            <div class="form-group alert alert-success">
+                            <label class="control-label">Choice @item.NumberOfChoice</label>
+                                <input type="radio" name="QuestionAnswer" value=" @item.NumberOfChoice" checked class="form-check-input " /> <!-- Value 1 for False -->
+
+                            <input type="text" name="@ID" class="form-control" value="@item.BodyOfChoice" />
+                        </div>
+                    }
+                    else{
+                            <div class="form-group alert alert-secondary">
+                        <label class="control-label">Choice @item.NumberOfChoice</label>
+                                <input type="radio" name="QuestionAnswer" value=" @item.NumberOfChoice" class="form-check-input " /> <!-- Value 1 for False -->
+
+                        <input type="text" name="@ID" class="form-control"value="@item.BodyOfChoice" />
+                    </div>
+                    }
+
+                }
+                @* <div class="form-group">
+                    <label class="control-label">Choice 1</label>
+                    <input type="checkbox" name="QuestionAnswer" value="1" /> <!-- Value 1 for False -->
+
+                    <input type="text" name="MultiChoice1" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Choice 2</label>
+                    <input type="checkbox" name="QuestionAnswer" value="2" /> <!-- Value 2 for False -->
+
+                    <input type="text" name="MultiChoice2" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Choice 3</label>
+                    <input type="checkbox" name="QuestionAnswer" value="3" /> <!-- Value 3 for False -->
+
+                    <input type="text" name="MultiChoice3" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Choice 4</label>
+                    <input type="checkbox" name="QuestionAnswer" value="4" /> <!-- Value 4 for False -->
+
+                    <input type="text" name="MultiChoice4" class="form-control" />
+                </div> *@
+            </div>
+            }
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#courseSelect').change(function () {
+                var courseId = $(this).val();
+                console.log(courseId);
+                var topicSelect = $('#topicSelect');
+
+                // Make an AJAX call to get topics associated with the selected course
+                $.ajax({
+                    url: '@Url.Action("GetTopicsByCourse", "Question")',
+                    type: 'GET',
+                    data: { courseId: courseId },
+                    success: function (data) {
+                        // Clear existing options
+                        topicSelect.empty();
+
+                        // Add new options based on retrieved data
+                        $.each(data, function (index, topic) {
+                            topicSelect.append($('<option>', {
+                                value: topic.id,
+                                text: topic.name
+                            }));
+                        });
+                    }
+                });
+            });
+        });
+
+
+        $(document).ready(function () {
+            // Show/hide sections based on question type selection
+            $("select[name='QuestionType']").change(function () {
+                var questionType = $(this).val();
+                console.log(questionType)
+                if (questionType === "False") {
+                    $("#trueFalseSection").show();
+                    $("#multiChoiceSection").hide();
+                }
+                else if (questionType === "True") {
+                    $("#trueFalseSection").hide();
+                    $("#multiChoiceSection").show();
+                }
+            });
+        });
+    </script>
+}

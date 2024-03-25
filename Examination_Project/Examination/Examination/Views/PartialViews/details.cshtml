@@ -1,0 +1,101 @@
+﻿@model Examination.Models.Question
+
+
+
+
+<div>
+
+    <dl class="row">
+        <div class="row">
+            <div class="col-sm-6">
+                <span class="topic-details">
+                <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Topic.Course)
+                </dt>
+                <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Topic.Course.Name)
+                </dd>
+                </span>
+            </div>
+            <div class="col-sm-6">
+                <span class="topic-details">
+                <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Topic)
+                </dt>
+                <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Topic.Name)
+                </dd>
+                </span>
+            </div>
+        </div>
+        <hr />
+
+
+
+        <dd class="col-sm-10">
+            <h4>
+                @Html.DisplayFor(model => model.QuestionBody)
+            </h4>
+            <br />
+            @if (Model.QuestionType)
+            {
+                @foreach (var item in Model.MultiChoicesQuestionAnswers)
+                {
+
+
+                    if (item.NumberOfChoice == Model.QuestionAnswer)
+                    {
+                        <div class="alert alert-success">
+                            <span>@item.NumberOfChoice</span> <span>-</span> <span> @item.BodyOfChoice</span>
+
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-secondary">
+                            <span>@item.NumberOfChoice</span> <span>-</span> <span> @item.BodyOfChoice</span>
+
+                        </div>
+                    }
+
+
+
+                }
+
+            }
+            else
+            {
+                if (Model.QuestionAnswer == 0)
+                {
+                    <div class="alert alert-secondary">
+                        <span> True</span>
+
+                    </div>
+                    <div class="alert alert-success">
+                        <span> False</span>
+
+                    </div>
+
+                }
+                else
+                {
+
+                    <div class="alert alert-success">
+                        <span> True</span>
+
+                    </div>
+                    <div class="alert alert-secondary">
+                        <span> False</span>
+
+                    </div>
+                }
+
+            }
+        </dd>
+
+        <hr />
+
+
+
+    </dl>
+</div>

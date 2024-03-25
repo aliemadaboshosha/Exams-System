@@ -1,0 +1,27 @@
+﻿@model Track
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="Id">Id</label>
+        <input asp-for="Id" class="form-control" readonly />
+        <span asp-validation-for="Id"></span>
+    </div>
+
+    <div>
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary mt-4 w-25">Edit</button>
+</form>
+<a class="btn btn-info mt-2 w-25" href="/Track/Index">Back</a>
+
+
+

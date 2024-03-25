@@ -17,11 +17,12 @@ public partial class Question
 
     public int CourseId { get; set; }
 
-    public virtual ICollection<MultiChoicesQuestionAnswer> MultiChoicesQuestionAnswers { get; set; } = new List<MultiChoicesQuestionAnswer>();
+    public virtual ICollection<MultiChoicesQuestionAnswer> MultiChoicesQuestionAnswers { get; set; } = [];
+       
 
     public virtual ICollection<StudentExamAnswer> StudentExamAnswers { get; set; } = new List<StudentExamAnswer>();
 
-    public virtual Topic Topic { get; set; } = null!;
+    public virtual Topic? Topic { get; set; } = null!;
 
     public virtual ICollection<Exam> Exams { get; set; } = new List<Exam>();
 }

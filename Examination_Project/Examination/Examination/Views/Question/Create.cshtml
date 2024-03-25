@@ -1,0 +1,177 @@
+﻿@model Examination.Models.Question
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Question</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="CourseId" class="control-label"></label>
+                <select id="courseSelect" asp-for="CourseId" class="form-control custom-select" asp-items="ViewBag.CourseId">
+                    <option value="">Choose the Course</option>
+                </select>
+                <span asp-validation-for="CourseId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TopicId" class="control-label"></label>
+                <select id="topicSelect" asp-for="TopicId" class="form-control custom-select">
+                    <!-- Options will be dynamically populated based on the selection made in the 'CourseId' dropdown -->
+                </select>
+                <span asp-validation-for="TopicId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="QuestionType" class="control-label"></label>
+                <select asp-for="QuestionType" class="form-control custom-select">
+                    <option value="">Choose the Question Type</option>
+                    <option value="False">True/False Question</option>
+                    <option value="True">Multi-choice Question</option>
+                </select>
+                <span asp-validation-for="QuestionType" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="QuestionBody" class="control-label"></label>
+                <textarea asp-for="QuestionBody" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="QuestionBody" class="text-danger"></span>
+            </div>
+
+
+         @*    <div class="form-group">
+                <label asp-for="QuestionBody" class="control-label"></label>
+                <input asp-for="QuestionBody" class="form-control" />
+                <span asp-validation-for="QuestionBody" class="text-danger"></span>
+            </div> *@
+            @* <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="QuestionType" /> @Html.DisplayNameFor(model => model.QuestionType)
+                </label>
+            </div> *@
+           
+
+          @*   <div class="form-group">
+                <label asp-for="QuestionAnswer" class="control-label"></label>
+                <input asp-for="QuestionAnswer" class="form-control" />
+                <span asp-validation-for="QuestionAnswer" class="text-danger"></span>
+            </div> *@
+
+
+
+            <!-- Section for True/False questions -->
+            <div id="trueFalseSection" style="display: none;">
+                <h4>True/False Question Answer</h4>
+                <hr />
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="radio" id="falseRadio" name="QuestionAnswer" value="0" class="form-check-input ">
+                        <label class="custom-control-label" for="falseRadio">False</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="radio" id="trueRadio" name="QuestionAnswer" value="1" class="form-check-input ">
+                        <label class="custom-control-label" for="trueRadio">True</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section for Multi-choice questions -->
+            <div id="multiChoiceSection" style="display: none;">
+                <h4>Multi-choice Question Answer</h4>
+                <hr />
+
+                <div class="form-group">
+                    <label class="control-label">Choice 1</label>
+                    <input type="radio" name="QuestionAnswer" value="1" class="form-check-input " /> <!-- Value 1 for Choice 1 -->
+                    <input type="text" name="MultiChoice1" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Choice 2</label>
+                    <input type="radio" name="QuestionAnswer" value="2" class="form-check-input " /> <!-- Value 2 for Choice 2 -->
+                    <input type="text" name="MultiChoice2" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Choice 3</label>
+                    <input type="radio" name="QuestionAnswer" value="3" class="form-check-input " /> <!-- Value 3 for Choice 3 -->
+                    <input type="text" name="MultiChoice3" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Choice 4</label>
+                    <input type="radio" name="QuestionAnswer" value="4" class="form-check-input " /> <!-- Value 4 for Choice 4 -->
+                    <input type="text" name="MultiChoice4" class="form-control" />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#courseSelect').change(function () {
+                var courseId = $(this).val();
+                console.log(courseId);
+                var topicSelect = $('#topicSelect');
+
+                // Make an AJAX call to get topics associated with the selected course
+                $.ajax({
+                    url: '@Url.Action("GetTopicsByCourse", "Question")',
+                    type: 'GET',
+                    data: { courseId: courseId },
+                    success: function (data) {
+                        // Clear existing options
+                        topicSelect.empty();
+
+                        // Add new options based on retrieved data
+                        $.each(data, function (index, topic) {
+                            topicSelect.append($('<option>', {
+                                value: topic.id,
+                                text: topic.name
+                            }));
+                        });
+                    }
+                });
+            });
+        });
+
+
+        $(document).ready(function () {
+            // Show/hide sections based on question type selection
+            $("select[name='QuestionType']").change(function () {
+                var questionType = $(this).val();
+                console.log(questionType)
+                if (questionType === "False") 
+                {
+                    $("#trueFalseSection").show();
+                    $("#multiChoiceSection").hide();
+                } 
+                else if (questionType === "True") 
+                {
+                    $("#trueFalseSection").hide();
+                    $("#multiChoiceSection").show();
+                }
+            });
+        });
+    </script>
+}

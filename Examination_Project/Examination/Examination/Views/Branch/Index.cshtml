@@ -1,0 +1,43 @@
+﻿@model List<Branch>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Branches</h1>
+<a href="/Branch/Create" class="btn btn-info mt-2 mb-2" style="text-align:left">Create Branch</a>
+<div style="text-align:center">
+
+<table class="table table-bordered">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Branch Name</th>
+            <th>Building_Number</th>
+            <th>Details</th>
+            <th>Update</th>
+            <th>Delete</th>
+            <th>Show tracks</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var branch in Model)
+        {
+            <tr>
+                <td>@branch.Id</td>
+                <td>@branch.Name</td>
+                <td>@branch.BuildingNumber</td>
+                    <td><a asp-action="Details" asp-controller="Branch" asp-route-id="@branch.Id">Show</a></td>
+                    <td><a asp-action="Update" asp-controller="Branch" asp-route-id="@branch.Id">Edit</a></td>
+                    <td>
+                        <a asp-controller="Branch" asp-action="Delete" asp-route-id="@branch.Id"
+                           onclick="return confirm('Are you sure you want to delete this Branch?')">Delete</a>
+                    </td>
+                    <td><a asp-action="ShowBranchTracksByID" asp-controller="BranchTracks" asp-route-id="@branch.Id">Show Tracks</a></td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+
+

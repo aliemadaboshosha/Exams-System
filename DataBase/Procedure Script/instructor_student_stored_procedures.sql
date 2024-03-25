@@ -29,6 +29,13 @@ AS
 BEGIN
     SELECT * FROM Student WHERE ID = @StudentID;
 END;
+-----get all students
+create procedure sp_GetStudents
+As
+begin
+	SELECT * FROM Student ;
+End
+
 
 --update
 CREATE PROCEDURE sp_UpdateStudent

@@ -1,0 +1,32 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details of Student # :@Model.ID</h1>
+
+<table class="table table-bordered mt-4" style="text-align:center">
+    <thead class="alert alert-info">
+        <tr>
+            <th>Student ID</th>
+            <th>Student FName</th>
+            <th>Student Lname</th>
+            <td>Student Email</td>
+            <th>Student Btranch</th>
+            <th>Student Track</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.ID</td>
+            <td>@Model.Fname</td>
+            <td>@Model.Lname</td>
+            <td>@Model.Email</td>
+            <td>@Model.Branch.Name</td>
+            <td>@Model.Track.Name</td>
+        </tr>
+    </tbody>
+
+    <a href="/Student/Index" class="btn btn-outline-primary">Back</a>
+
+
