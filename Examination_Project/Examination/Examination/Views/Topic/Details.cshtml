@@ -1,0 +1,24 @@
+﻿@model Topic
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details of Topic # : @Model.Id</h1>
+
+<table class="table table-bordered mt-4" style="text-align:center">
+    <thead class="alert alert-info">
+        <tr>
+            <th>Topic ID</th>
+            <th>Topic Name</th>
+            <th>Course ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.CourseId</td>
+        </tr>
+    </tbody>
+</table>
+<a href="/Topic/Index" class="btn btn-outline-primary">Back</a>

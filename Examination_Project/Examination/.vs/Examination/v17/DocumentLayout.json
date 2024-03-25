@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\rahek\\exams-system\\examination_project\\examination\\examination\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\rahek\\exams-system\\examination_project\\examination\\examination\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\rahek\\exams-system\\examination_project\\examination\\examination\\repos\\topicrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\repos\\topicrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\rahek\\exams-system\\examination_project\\examination\\examination\\repos\\courserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\repos\\courserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\rahek\\exams-system\\examination_project\\examination\\examination\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|d:\\pd(iti mansoura)\\advancedsql\\rahek\\exams-system\\examination_project\\examination\\examination\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3479F071-645B-4644-85A8-5A0B8B970F5F}|Examination\\Examination.csproj|solutionrelative:examination\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Topic.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Models\\Topic.cs",
+              "RelativeDocumentMoniker": "Examination\\Models\\Topic.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Models\\Topic.cs",
+              "RelativeToolTip": "Examination\\Models\\Topic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T14:09:29.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Examination\\Controllers\\CourseController.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Examination\\Controllers\\CourseController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T14:04:50.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TopicController.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Controllers\\TopicController.cs",
+              "RelativeDocumentMoniker": "Examination\\Controllers\\TopicController.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Controllers\\TopicController.cs",
+              "RelativeToolTip": "Examination\\Controllers\\TopicController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAmwEwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T13:56:15.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TopicRepo.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Repos\\TopicRepo.cs",
+              "RelativeDocumentMoniker": "Examination\\Repos\\TopicRepo.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Repos\\TopicRepo.cs",
+              "RelativeToolTip": "Examination\\Repos\\TopicRepo.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAuwDgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T13:50:21.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseRepo.cs",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Repos\\CourseRepo.cs",
+              "RelativeDocumentMoniker": "Examination\\Repos\\CourseRepo.cs",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Repos\\CourseRepo.cs",
+              "RelativeToolTip": "Examination\\Repos\\CourseRepo.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAkwDcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T12:04:12.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Views\\Course\\Index.cshtml",
+              "RelativeDocumentMoniker": "Examination\\Views\\Course\\Index.cshtml",
+              "ToolTip": "D:\\PD(ITI Mansoura)\\AdvancedSQL\\Rahek\\Exams-System\\Examination_Project\\Examination\\Examination\\Views\\Course\\Index.cshtml",
+              "RelativeToolTip": "Examination\\Views\\Course\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-25T12:01:34.842Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
