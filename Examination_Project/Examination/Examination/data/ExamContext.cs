@@ -30,6 +30,8 @@ public partial class ExamContext : DbContext
 
     public virtual DbSet<Question> Questions { get; set; }
 
+    public virtual DbSet<Role> Roles { get; set; }
+
     public virtual DbSet<Student> Students { get; set; }
 
     public virtual DbSet<StudentExam> StudentExams { get; set; }
@@ -42,11 +44,15 @@ public partial class ExamContext : DbContext
 
     public virtual DbSet<TrackBranch> TrackBranches { get; set; }
 
+    public virtual DbSet<User> Users { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+
     {
         optionsBuilder.UseLazyLoadingProxies() // Enable lazy loading proxies
                       .UseSqlServer("Server=DESKTOP-NP9ERV5\\SQLEXPRESS01;Database=Examination_System_DataBase;Integrated Security=true;TrustServerCertificate=true;");
     }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -200,13 +206,21 @@ public partial class ExamContext : DbContext
                     });
         });
 
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.ToTable("Role");
+
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Name).HasMaxLength(50);
+        });
+
         modelBuilder.Entity<Student>(entity =>
         {
             entity.HasKey(e => e.ID).HasName("PK__Student__3214EC2788E2EAFF");
 
             entity.ToTable("Student");
 
-           // entity.Property(e => e.ID).HasColumnName("ID");
+            entity.Property(e => e.ID).HasColumnName("ID");
             entity.Property(e => e.BranchId).HasColumnName("Branch_ID");
             entity.Property(e => e.City).HasMaxLength(50);
             entity.Property(e => e.DateOfBirth).HasColumnName("Date_of_birth");
@@ -326,6 +340,35 @@ public partial class ExamContext : DbContext
             entity.HasOne(d => d.Track).WithMany(p => p.TrackBranches)
                 .HasForeignKey(d => d.TrackId)
                 .HasConstraintName("FK__Track_Bra__Track__5441852A");
+        });
+
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.ToTable("User");
+
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Email).HasMaxLength(100);
+            entity.Property(e => e.Name).HasMaxLength(50);
+            entity.Property(e => e.Password).HasMaxLength(50);
+
+            entity.HasMany(d => d.Roles).WithMany(p => p.Users)
+                .UsingEntity<Dictionary<string, object>>(
+                    "UserRole",
+                    r => r.HasOne<Role>().WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK_user_role_Role"),
+                    l => l.HasOne<User>().WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK_user_role_User"),
+                    j =>
+                    {
+                        j.HasKey("UserId", "RoleId");
+                        j.ToTable("user_role");
+                        j.IndexerProperty<int>("UserId").HasColumnName("User_Id");
+                        j.IndexerProperty<int>("RoleId").HasColumnName("Role_Id");
+                    });
         });
 
         OnModelCreatingPartial(modelBuilder);

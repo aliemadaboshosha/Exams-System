@@ -1,6 +1,8 @@
 ﻿using Examination.Models;
 using Examination.Repos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace Examination.Controllers
 {
@@ -13,10 +15,15 @@ namespace Examination.Controllers
             this.branchRepo = branchRepo;
         }
 
+     //  [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             var instructors = await instructorRepo.GetAll();
             return View(instructors);
+        }
+        public IActionResult Home()
+        {
+            return View();
         }
 
         public async Task<IActionResult> Details(int? id)

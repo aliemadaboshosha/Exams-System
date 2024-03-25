@@ -1,5 +1,6 @@
 using Examination.data;
 using Examination.Repos;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 namespace Examination
@@ -9,10 +10,7 @@ namespace Examination
         public static void Main(string[] args)
         {
             ExamContext db = new ExamContext();
-            //var student = db.Students.Single(d=>d.Id==1);
-            //Console.WriteLine(student.Fname);
-            //var track = db.Tracks.Single(d=>d.Id==1);
-            //Console.WriteLine(track);
+           
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
@@ -26,6 +24,8 @@ namespace Examination
             builder.Services.AddDbContext<ExamContext>(a =>
           a.UseSqlServer(builder.Configuration.GetConnectionString("Conn1")));
 
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -36,12 +36,13 @@ namespace Examination
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Instructor}/{action=Index}/{id?}");
+                pattern: "{controller=Instructor}/{action=index}/{id?}");
 
             app.Run();
         }
