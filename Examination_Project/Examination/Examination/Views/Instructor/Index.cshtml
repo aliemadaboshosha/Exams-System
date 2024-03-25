@@ -12,7 +12,7 @@
             <tr>
                 <th>ID</th>
                 <th>Instructor Name</th>
-                <th>Branch Name</th>
+               <th>Branch Name</th>
                 <th>Details</th>
                 <th>Update</th>
                 <th>Delete</th>
@@ -24,7 +24,7 @@
                 <tr>
                     <td>@item.Id</td>
                     <td>@item.Fname</td>
-                    <td>@item.Branch.Name</td>
+                   <td>@item.Branch.Name</td>@*Lazy Load *@
                     <td><a asp-action="Details" asp-controller="Instructor" asp-route-id="@item.Id">Show</a></td>
                     <td><a asp-action="Update" asp-controller="Instructor" asp-route-id="@item.Id">Edit</a></td>
                     <td>
