@@ -23,16 +23,15 @@ namespace Examination.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            if (!ModelState.IsValid)  
-            {
-                return View(model);
-            }
             var user = db.Users.Include(s => s.Roles).FirstOrDefault(u => u.Email == model.Email && u.Password == model.Password);
-            if (user == null)
+
+            if (!ModelState.IsValid || user == null)  
             {
-                ModelState.AddModelError("", "Invalid email or password");//add an error to the model state
+                ModelState.AddModelError("","Invalid email or password");//add an error to the model state
+
                 return View(model);
             }
+          
             Claim claim1 = new Claim(ClaimTypes.Name, user.Name);
             Claim claim2 = new Claim(ClaimTypes.Email, user.Email);
  
@@ -49,18 +48,18 @@ namespace Examination.Controllers
             ClaimsPrincipal claimsPrincipal1 = new ClaimsPrincipal();
             claimsPrincipal1.AddIdentity(claimsIdentity1);
             await HttpContext.SignInAsync(claimsPrincipal1);
-            string controller = "Instructor"; // any default value
+            string controller = ""; // any default value
             if (User.IsInRole("Admin"))
             {
-                controller = "Instructor";
+                controller = "User";
             }
             else if (User.IsInRole("Student"))
             {
-                controller ="Track";
+                controller ="Exam";// demand Home action
             }
             else // Instructor 
             {
-                controller = "Branch";// iwill modify 
+                controller = "Report";// i will modify it ,any controller here should  implement Home action and view 
             }
             return RedirectToAction("Home", controller);
         }

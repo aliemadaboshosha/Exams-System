@@ -1,5 +1,6 @@
 ﻿using Examination.Models;
 using Examination.Repos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace Examination.Controllers
         {
             this.branchRepo = branchRepo;
         }
+        [Authorize(Roles ="Admin")]
 
         public async Task<IActionResult> Index()
         {
