@@ -17,39 +17,103 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Examination
 build_property.RootNamespace = Examination
-build_property.ProjectDir = D:\iti\sql project\Exam-after\Exams-System\Examination_Project\Examination\Examination\
+build_property.ProjectDir = C:\Users\Rahek\OneDrive\المستندات\Desktop\Exams-System\Examination_Project\Examination\Examination\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\iti\sql project\Exam-after\Exams-System\Examination_Project\Examination\Examination
+build_property.MSBuildProjectDirectory = C:\Users\Rahek\OneDrive\المستندات\Desktop\Exams-System\Examination_Project\Examination\Examination
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Home/Index.cshtml]
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Branch/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Branch/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Branch/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Branch/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Course/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Course/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Course/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Course/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Home/Privacy.cshtml]
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Shared/Error.cshtml]
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/_ViewImports.cshtml]
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Topic/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Topic/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Topic/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Topic/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Track/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Track/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Track/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Track/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/_ViewStart.cshtml]
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/iti/sql project/Exam-after/Exams-System/Examination_Project/Examination/Examination/Views/Shared/_Layout.cshtml]
+[C:/Users/Rahek/OneDrive/المستندات/Desktop/Exams-System/Examination_Project/Examination/Examination/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gcjebsm1fz

@@ -1,0 +1,38 @@
+﻿@model List<Topic>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Topics</h1>
+<a href="/Topic/Create" class="btn btn-info mt-2 mb-2" style="text-align:left">Create Topic</a>
+<div style="text-align:center">
+
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Topic Name</th>
+                <th>Course ID</th> 
+                <th>Details</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var topic in Model) 
+            {
+                <tr>
+                    <td>@topic.Id</td>
+                    <td>@topic.Name</td>
+                    <td>@topic.CourseId</td>
+                    <td><a asp-action="Details" asp-controller="Topic" asp-route-id="@topic.Id">Show</a></td>
+                    <td><a asp-action="Update" asp-controller="Topic" asp-route-id="@topic.Id">Edit</a></td>
+                    <td>
+                        <a asp-controller="Topic" asp-action="Delete" asp-route-id="@topic.Id"
+                           onclick="return confirm('Are you sure you want to delete this Topic?')">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

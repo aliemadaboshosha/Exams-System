@@ -1,4 +1,5 @@
 using Examination.data;
+using Examination.Repos;
 using Microsoft.EntityFrameworkCore;
 
 namespace Examination
@@ -8,16 +9,20 @@ namespace Examination
         public static void Main(string[] args)
         {
             ExamContext db = new ExamContext();
-            var student = db.Students.Single(d=>d.Id==1);
-            Console.WriteLine(student.Fname);
-            var track = db.Tracks.Single(d=>d.Id==1);
-            Console.WriteLine(track);
+            //var student = db.Students.Single(d=>d.Id==1);
+            //Console.WriteLine(student.Fname);
+            //var track = db.Tracks.Single(d=>d.Id==1);
+            //Console.WriteLine(track);
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IBranchRepo, BranchRepo>();
+            builder.Services.AddScoped<ITrackRepo, TrackRepo>();
+            builder.Services.AddScoped<ITopicRepo, TopicRepo>();
+            builder.Services.AddScoped<ICourseRepo, CourseRepo>();
 
-           builder.Services.AddDbContext<ExamContext>(a =>
+            builder.Services.AddDbContext<ExamContext>(a =>
           a.UseSqlServer(builder.Configuration.GetConnectionString("Conn1")));
 
             var app = builder.Build();
@@ -35,7 +40,7 @@ namespace Examination
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Track}/{action=Index}/{id?}");
 
             app.Run();
         }
